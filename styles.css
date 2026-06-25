@@ -14,7 +14,7 @@ body {
 /* HERO */
 .hero {
   height: 100vh;
-  background: url('foto-vinedo-ia.jpg') center/cover no-repeat;
+  background-image: url('Foto-vinedo-ia.jpg);
   position: relative;
   display: flex;
   align-items: center;
