@@ -101,6 +101,20 @@ body {
   font-weight: bold;
   margin-top: 10px;
 }
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: #222;
+    font-size: 28px;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.social-links a:hover {
+    opacity: 0.7;
+}
 
 /* FOOTER */
 footer {
