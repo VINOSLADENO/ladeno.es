@@ -15,14 +15,10 @@ body {
 .hero {
   height: 100vh;
   background-image: url('foto-vinedo-ia.jpg');
-  background-size: cover;
-  background-position: left center;
+  background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  background-color: #000;
 }
 
 .overlay {
