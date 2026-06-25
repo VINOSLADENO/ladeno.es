@@ -16,7 +16,7 @@ body {
   height: 100vh;
   background-image: url('foto-vinedo-ia.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: left center;
   background-repeat: no-repeat;
   position: relative;
   display: flex;
