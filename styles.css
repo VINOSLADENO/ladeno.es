@@ -15,7 +15,7 @@ body {
 .hero{
     height:100vh;
 
-    background-image:url('hero-ladeno.jpg.png');
+    background-image:url('hero-ladeno.png');
     background-size:cover;
     background-position:center center;
     background-repeat:no-repeat;
