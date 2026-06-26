@@ -13,14 +13,20 @@ body {
 
 /* HERO */
 .hero{
-    position:relative;
-    width:100%;
     height:100vh;
-    overflow:hidden;
+
+    background-image:url('hero-ladeno.jpg');
+    background-size:cover;
+    background-position:center center;
+    background-repeat:no-repeat;
+
+    position:relative;
 
     display:flex;
     justify-content:center;
     align-items:center;
+
+    text-align:center;
 }
 
 .hero-image{
@@ -37,21 +43,13 @@ body {
 .overlay{
     position:absolute;
     inset:0;
-    background:rgba(0,0,0,.35);
+    background:rgba(0,0,0,.30);
 }
 
 .hero-content{
     position:relative;
     z-index:2;
-
     color:white;
-
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-
-    text-align:center;
 }
 
 .hero h1 {
