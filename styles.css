@@ -142,3 +142,187 @@ footer {
   font-size: 12px;
   color: #777;
 }
+/*=========================
+      AGE GATE
+==========================*/
+
+#ageGate{
+    position:fixed;
+    inset:0;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:
+        linear-gradient(rgba(0,0,0,.55),
+        rgba(0,0,0,.55));
+
+    backdrop-filter:blur(3px);
+
+    z-index:9999;
+
+    transition:.6s;
+}
+
+.age-box{
+
+    width:min(90%,560px);
+
+    padding:60px 45px;
+
+    border-radius:22px;
+
+    background:rgba(15,15,15,.72);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    backdrop-filter:blur(18px);
+
+    text-align:center;
+
+    color:white;
+
+    box-shadow:0 20px 70px rgba(0,0,0,.55);
+
+}
+
+.age-logo{
+
+    width:180px;
+
+    display:block;
+
+    margin:0 auto 35px;
+
+}
+
+.age-box h1{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:48px;
+
+    font-weight:600;
+
+    margin-bottom:18px;
+
+}
+
+.age-box p{
+
+    font-size:19px;
+
+    line-height:1.8;
+
+    color:#eeeeee;
+
+    margin-bottom:42px;
+
+}
+
+#acceptAge{
+
+    width:100%;
+
+    padding:18px;
+
+    border:none;
+
+    border-radius:40px;
+
+    cursor:pointer;
+
+    background:#b99963;
+
+    color:white;
+
+    font-size:18px;
+
+    transition:.3s;
+
+}
+
+#acceptAge:hover{
+
+    background:#d3b27d;
+
+    transform:translateY(-2px);
+
+}
+
+.exit-link{
+
+    display:block;
+
+    margin-top:28px;
+
+    color:#ddd;
+
+    text-decoration:none;
+
+}
+
+.exit-link:hover{
+
+    color:white;
+
+}
+
+.age-box small{
+
+    display:block;
+
+    margin-top:40px;
+
+    color:#c8c8c8;
+
+    font-size:14px;
+
+}
+
+/*=========================
+      MÓVILES
+==========================*/
+
+@media(max-width:768px){
+
+.age-box{
+
+    width:92%;
+
+    padding:40px 28px;
+
+}
+
+.age-logo{
+
+    width:130px;
+
+    margin-bottom:25px;
+
+}
+
+.age-box h1{
+
+    font-size:36px;
+
+}
+
+.age-box p{
+
+    font-size:16px;
+
+    line-height:1.7;
+
+    margin-bottom:34px;
+
+}
+
+#acceptAge{
+
+    font-size:16px;
+
+}
+
+}
