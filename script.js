@@ -1,22 +1,33 @@
-const ageGate=document.getElementById("ageGate");
-const button=document.getElementById("acceptAge");
+document.addEventListener("DOMContentLoaded", function () {
 
-const accepted=localStorage.getItem("ladeno18");
+    const ageGate = document.getElementById("ageGate");
+    const button = document.getElementById("acceptAge");
 
-if(accepted==="yes"){
-    ageGate.style.display="none";
-}
+    if (!ageGate || !button) return;
 
-button.addEventListener("click",()=>{
+    // Si ya aceptó anteriormente
+    if (localStorage.getItem("ladeno18") === "yes") {
+        ageGate.style.display = "none";
+        return;
+    }
 
-    localStorage.setItem("ladeno18","yes");
+    button.addEventListener("click", function () {
 
-    ageGate.style.opacity="0";
+        localStorage.setItem("ladeno18", "yes");
 
-    setTimeout(()=>{
+        ageGate.style.opacity = "0";
 
-        ageGate.style.display="none";
+        setTimeout(function () {
+            ageGate.style.display = "none";
 
-    },600);
+            // Volver al inicio de la página (HERO)
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+
+        }, 600);
+
+    });
 
 });
