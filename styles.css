@@ -361,3 +361,84 @@ footer {
 }
 
 }
+/*=========================
+      NAVBAR
+==========================*/
+
+.navbar{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    z-index:9000;
+
+    transition:.4s;
+
+}
+
+.nav-container{
+
+    max-width:1300px;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:22px 50px;
+
+}
+
+.logo-nav img{
+
+    width:58px;
+
+    display:block;
+
+}
+
+.nav-menu{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:40px;
+
+}
+
+.nav-menu a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:16px;
+
+    letter-spacing:1px;
+
+    transition:.3s;
+
+}
+
+.nav-menu a:hover{
+
+    color:#d8c29a;
+
+}
+
+.navbar.scrolled{
+
+    background:rgba(10,10,10,.82);
+
+    backdrop-filter:blur(12px);
+
+}
