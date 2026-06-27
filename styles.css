@@ -120,19 +120,30 @@ body {
   font-weight: bold;
   margin-top: 10px;
 }
+
 .social-links {
     margin-top: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
 }
 
 .social-links a {
     color: #222;
     font-size: 28px;
     text-decoration: none;
-    transition: opacity 0.3s ease;
+
+    transition: transform 0.3s ease,
+                opacity 0.3s ease,
+                color 0.3s ease;
 }
 
 .social-links a:hover {
-    opacity: 0.7;
+    opacity: 0.85;
+    color: #b99963;
+    transform: translateY(-3px);
 }
 
 /* FOOTER */
