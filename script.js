@@ -33,16 +33,40 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 const navbar = document.querySelector(".navbar");
 
-window.addEventListener("scroll", function(){
+const hero = document.querySelector(".hero");
+const filosofia = document.getElementById("filosofia");
+const vino = document.getElementById("vino");
+const contacto = document.getElementById("contacto");
 
-    if(window.scrollY > 80){
+function updateNavbar(){
 
-        navbar.classList.add("scrolled");
+    const y = window.scrollY + 120;
+
+    if(y < filosofia.offsetTop){
+
+        navbar.classList.add("light");
+        navbar.classList.remove("dark");
+
+    }else if(y >= filosofia.offsetTop && y < vino.offsetTop){
+
+        navbar.classList.add("dark");
+        navbar.classList.remove("light");
+
+    }else if(y >= vino.offsetTop && y < contacto.offsetTop){
+
+        navbar.classList.add("light");
+        navbar.classList.remove("dark");
 
     }else{
 
-        navbar.classList.remove("scrolled");
+        navbar.classList.add("dark");
+        navbar.classList.remove("light");
 
     }
+
+}
+
+window.addEventListener("scroll", updateNavbar);
+window.addEventListener("load", updateNavbar);
 
 });
