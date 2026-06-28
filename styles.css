@@ -121,6 +121,14 @@ body {
 }
 
 /* CONTACTO */
+.contact{
+
+    text-align:center;
+
+    padding:80px 20px;
+
+}
+
 .contact .email {
   font-weight: bold;
   margin-top: 10px;
@@ -442,8 +450,22 @@ footer {
 
 .navbar.scrolled{
 
-    background:rgba(10,10,10,.82);
+    background:rgba(255,255,255,.95);
 
     backdrop-filter:blur(12px);
+
+    box-shadow:0 2px 12px rgba(0,0,0,.08);
+
+}
+
+.navbar.scrolled .nav-menu a{
+
+    color:#222;
+
+}
+
+.navbar.scrolled .nav-menu a:hover{
+
+    color:#b99963;
 
 }
