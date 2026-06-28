@@ -18,6 +18,7 @@ body {
 
 /* HERO */
 .hero{
+
     height:100vh;
 
     background-image:url('hero-ladeno.png');
@@ -26,6 +27,14 @@ body {
     background-repeat:no-repeat;
 
     position:relative;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+}
 
     /* Colores de la barra según la sección */
 
@@ -471,9 +480,31 @@ footer {
 
 }
 
-.navbar.scrolled{
+/* =========================
+   ESTADOS DE LA NAVBAR
+========================= */
 
-    background:rgba(255,255,255,.95);
+.navbar.light{
+
+    background:transparent;
+
+}
+
+.navbar.light .nav-menu a{
+
+    color:#ffffff;
+
+}
+
+.navbar.light .nav-menu a:hover{
+
+    color:#d8c29a;
+
+}
+
+.navbar.dark{
+
+    background:rgba(255,255,255,.94);
 
     backdrop-filter:blur(12px);
 
@@ -481,13 +512,13 @@ footer {
 
 }
 
-.navbar.scrolled .nav-menu a{
+.navbar.dark .nav-menu a{
 
     color:#222;
 
 }
 
-.navbar.scrolled .nav-menu a:hover{
+.navbar.dark .nav-menu a:hover{
 
     color:#b99963;
 
