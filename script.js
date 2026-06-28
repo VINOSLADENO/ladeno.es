@@ -45,6 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const navbar = document.querySelector(".navbar");
     const filosofia = document.getElementById("filosofia");
     const vino = document.getElementById("vino");
+    const esencia = document.getElementById("esencia");
     const contacto = document.getElementById("contacto");
 
     function updateNavbar() {
