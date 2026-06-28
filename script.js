@@ -68,5 +68,3 @@ function updateNavbar(){
 
 window.addEventListener("scroll", updateNavbar);
 window.addEventListener("load", updateNavbar);
-
-});
