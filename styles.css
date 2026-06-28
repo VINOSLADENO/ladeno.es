@@ -27,6 +27,29 @@ body {
 
     position:relative;
 
+    /* Colores de la barra según la sección */
+
+.navbar.light .nav-menu a{
+    color:#ffffff;
+}
+
+.navbar.light .nav-menu a:hover{
+    color:#d8c29a;
+}
+
+.navbar.dark{
+    background:rgba(255,255,255,.94);
+    backdrop-filter:blur(12px);
+    box-shadow:0 2px 12px rgba(0,0,0,.08);
+}
+
+.navbar.dark .nav-menu a{
+    color:#222;
+}
+
+.navbar.dark .nav-menu a:hover{
+    color:#b99963;
+}
     display:flex;
     justify-content:center;
     align-items:center;
