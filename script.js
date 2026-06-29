@@ -46,31 +46,40 @@ document.addEventListener("DOMContentLoaded", function () {
     const filosofia = document.getElementById("filosofia");
     const vino = document.getElementById("vino");
     const esencia = document.getElementById("esencia");
-    const contacto = document.getElementById("contacto");
 
     function updateNavbar() {
 
         const y = window.scrollY + 120;
 
+        // HERO
         if (y < filosofia.offsetTop) {
 
-            navbar.classList.add("light");
             navbar.classList.remove("dark");
-
-        } else if (y < vino.offsetTop) {
-
-            navbar.classList.add("dark");
-            navbar.classList.remove("light");
-
-        } else if (y < contacto.offsetTop) {
-
             navbar.classList.add("light");
-            navbar.classList.remove("dark");
 
-        } else {
+        }
 
-            navbar.classList.add("dark");
+        // FILOSOFÍA
+        else if (y < vino.offsetTop) {
+
             navbar.classList.remove("light");
+            navbar.classList.add("dark");
+
+        }
+
+        // EL VINO
+        else if (y < esencia.offsetTop) {
+
+            navbar.classList.remove("dark");
+            navbar.classList.add("light");
+
+        }
+
+        // LA ESENCIA + CONTACTO
+        else {
+
+            navbar.classList.remove("light");
+            navbar.classList.add("dark");
 
         }
 
