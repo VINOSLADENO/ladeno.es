@@ -19,7 +19,55 @@ body{
   display:flex;justify-content:space-between;align-items:center;
   padding:22px 50px;
 }
-.logo-nav img{width:58px;display:block;}
+.logo-nav{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    text-decoration:none;
+
+}
+
+.logo-nav img{
+
+    width:58px;
+
+    display:block;
+
+    transition:transform .3s ease;
+
+}
+
+.logo-nav:hover img{
+
+    transform:rotate(-8deg);
+
+}
+
+.logo-text{
+
+    font-family:"Cormorant Garamond", serif;
+
+    font-size:38px;
+
+    font-weight:600;
+
+    letter-spacing:3px;
+
+    color:inherit;
+
+    transition:opacity .3s ease;
+
+}
+
+.logo-nav:hover .logo-text{
+
+    opacity:.75;
+
+}
 .nav-menu{display:flex;list-style:none;gap:40px;}
 .nav-menu a{
   text-decoration:none;
@@ -121,4 +169,15 @@ cursor:pointer;background:#b99963;color:#fff;font-size:18px;transition:.3s;}
     margin-bottom: 20px;
     color: #1a1a1a;}
 #acceptAge{font-size:16px;}
+}
+.navbar.light .logo-text{
+
+    color:white;
+
+}
+
+.navbar.dark .logo-text{
+
+    color:#222;
+
 }
