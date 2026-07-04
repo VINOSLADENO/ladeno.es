@@ -280,3 +280,12 @@ cursor:pointer;background:#b99963;color:#fff;font-size:18px;transition:.3s;}
 }
 
 }
+.mobile-break {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile-break {
+    display: block;
+  }
+}
