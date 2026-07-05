@@ -289,3 +289,6 @@ cursor:pointer;background:#b99963;color:#fff;font-size:18px;transition:.3s;}
     display: block;
   }
 }
+section {
+  scroll-margin-top: 60px;
+}
