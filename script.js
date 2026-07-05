@@ -48,42 +48,36 @@ document.addEventListener("DOMContentLoaded", function () {
     const esencia = document.getElementById("esencia");
 
     function updateNavbar() {
+    const navHeight = navbar.offsetHeight;
+    const y = window.scrollY + navHeight;
+    const contacto = document.getElementById("contacto");
 
-        const y = window.scrollY + 120;
-
-        // HERO
-        if (y < filosofia.offsetTop) {
-
-            navbar.classList.remove("dark");
-            navbar.classList.add("light");
-
-        }
-
-        // FILOSOFÍA
-        else if (y < vino.offsetTop) {
-
-            navbar.classList.remove("light");
-            navbar.classList.add("dark");
-
-        }
-
-        // EL VINO
-        else if (y < esencia.offsetTop) {
-
-            navbar.classList.remove("dark");
-            navbar.classList.add("light");
-
-        }
-
-        // LA ESENCIA + CONTACTO
-        else {
-
-            navbar.classList.remove("light");
-            navbar.classList.add("dark");
-
-        }
-
+    // HERO — transparente, letras blancas
+    if (y < filosofia.offsetTop + navHeight) {
+        navbar.classList.remove("dark", "translucent");
+        navbar.classList.add("light");
     }
+    // EL ORIGEN — translúcida, letras negras
+    else if (y < vino.offsetTop + navHeight) {
+        navbar.classList.remove("light", "translucent");
+        navbar.classList.add("dark");
+    }
+    // EL VINO — translúcida, letras blancas
+    else if (y < esencia.offsetTop + navHeight) {
+        navbar.classList.remove("light", "dark");
+        navbar.classList.add("translucent");
+    }
+    // ESENCIA — translúcida, letras negras
+    else if (y < contacto.offsetTop + navHeight) {
+        navbar.classList.remove("light", "translucent");
+        navbar.classList.add("dark");
+    }
+    // CONTACTO — translúcida, letras blancas
+    else {
+        navbar.classList.remove("light", "dark");
+        navbar.classList.add("translucent");
+    }
+}
 
     updateNavbar();
 
