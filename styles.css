@@ -305,3 +305,15 @@ cursor:pointer;background:#b99963;color:#fff;font-size:18px;transition:.3s;}
 section {
   scroll-margin-top: 90px;
 }
+.dark.contact h2 {
+  color: #fff;
+}
+.dark.contact p {
+  color: #fff;
+}
+.dark.contact a.contact-button {
+  color: #fff;
+}
+.dark.contact .social-links a {
+  color: #fff;
+}
