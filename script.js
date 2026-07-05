@@ -49,26 +49,26 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function updateNavbar() {
     const navHeight = navbar.offsetHeight;
-    const y = window.scrollY + navHeight;
     const contacto = document.getElementById("contacto");
+    const y = window.scrollY + navHeight;
 
     // HERO — transparente, letras blancas
-    if (y < filosofia.offsetTop + navHeight) {
+    if (window.scrollY < filosofia.offsetTop - navHeight) {
         navbar.classList.remove("dark", "translucent");
         navbar.classList.add("light");
     }
     // EL ORIGEN — translúcida, letras negras
-    else if (y < vino.offsetTop + (navHeight / 2)) {
+    else if (window.scrollY < vino.offsetTop - navHeight) {
         navbar.classList.remove("light", "translucent");
         navbar.classList.add("dark");
     }
     // EL VINO — translúcida, letras blancas
-    else if (y < esencia.offsetTop + navHeight) {
+    else if (window.scrollY < esencia.offsetTop - navHeight) {
         navbar.classList.remove("light", "dark");
         navbar.classList.add("translucent");
     }
     // ESENCIA — translúcida, letras negras
-    else if (y < contacto.offsetTop + navHeight) {
+    else if (window.scrollY < contacto.offsetTop - navHeight) {
         navbar.classList.remove("light", "translucent");
         navbar.classList.add("dark");
     }
