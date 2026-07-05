@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
         navbar.classList.add("light");
     }
     // EL ORIGEN — translúcida, letras negras
-    else if (y < vino.offsetTop + navHeight) {
+    else if (y < vino.offsetTop + (navHeight / 2)) {
         navbar.classList.remove("light", "translucent");
         navbar.classList.add("dark");
     }
