@@ -75,16 +75,29 @@ body{
   letter-spacing:1px;
   transition:.3s;
 }
-.navbar.light{background:transparent;}
-.navbar.light .nav-menu a{color:#fff;}
-.navbar.light .nav-menu a:hover{color:#d8c29a;}
-.navbar.dark{
-  background:rgba(255,255,255,.94);
-  backdrop-filter:blur(12px);
-  box-shadow:0 2px 12px rgba(0,0,0,.08);
+.navbar.light {
+  background: transparent;
 }
-.navbar.dark .nav-menu a{color:#222;}
-.navbar.dark .nav-menu a:hover{color:#b99963;}
+.navbar.light .nav-menu a { color: #fff; }
+.navbar.light .logo-text { color: #fff; }
+.navbar.light .menu-toggle { color: #fff; }
+
+.navbar.dark {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 2px 12px rgba(0,0,0,.08);
+}
+.navbar.dark .nav-menu a { color: #222; }
+.navbar.dark .logo-text { color: #222; }
+.navbar.dark .menu-toggle { color: #222; }
+
+.navbar.translucent {
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(12px);
+}
+.navbar.translucent .nav-menu a { color: #fff; }
+.navbar.translucent .logo-text { color: #fff; }
+.navbar.translucent .menu-toggle { color: #fff; }
 
 /* HERO */
 .hero{
