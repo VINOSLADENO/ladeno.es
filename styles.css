@@ -317,3 +317,8 @@ section {
 .dark.contact .social-links a {
   color: #fff;
 }
+@media (max-width: 768px) {
+  .separador {
+    display: none;
+  }
+}
