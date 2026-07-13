@@ -322,3 +322,12 @@ section {
     display: none;
   }
 }
+.desktop-break {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .desktop-break {
+    display: none;
+  }
+}
