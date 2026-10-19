@@ -331,3 +331,7 @@ section {
     display: none;
   }
 }
+
+.marca-ladeno { height: 28px; width: auto; display: block; }
+.age-gate .marca-ladeno { height: 48px; }
+.hero .marca-ladeno { height: clamp(60px, 12vw, 160px); }
