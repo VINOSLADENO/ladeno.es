@@ -345,3 +345,13 @@ section {
   margin: 0 auto;           /* centra la imagen dentro de su espacio */
 }
 .hero .marca-ladeno { height: clamp(39px, 12vw, 80px); }
+/* Misma altura para el PNG y el SVG en la barra de navegación */
+nav img[src*="logo-ladeno.png"],
+nav img.marca-ladeno {
+  height: 28px;          /* la altura que uses para el SVG */
+  width: auto;           /* el ancho se calcula solo, sin deformar */
+  max-width: none;
+  object-fit: contain;
+  flex-shrink: 0;        /* impide que la barra lo comprima */
+}
+
