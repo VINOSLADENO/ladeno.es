@@ -47,27 +47,6 @@ body{
 
 }
 
-.logo-text{
-
-    font-family:"Cormorant Garamond", serif;
-
-    font-size:38px;
-
-    font-weight:600;
-
-    letter-spacing:3px;
-
-    color:inherit;
-
-    transition:opacity .3s ease;
-
-}
-
-.logo-nav:hover .logo-text{
-
-    opacity:.75;
-
-}
 .nav-menu{display:flex;list-style:none;gap:40px;}
 .nav-menu a{
   text-decoration:none;
@@ -79,7 +58,6 @@ body{
   background: transparent;
 }
 .navbar.light .nav-menu a { color: #fff; }
-.navbar.light .logo-text { color: #fff; }
 .navbar.light .menu-toggle { color: #fff; }
 
 .navbar.dark {
@@ -88,7 +66,6 @@ body{
   box-shadow: 0 2px 12px rgba(0,0,0,.08);
 }
 .navbar.dark .nav-menu a { color: #222; }
-.navbar.dark .logo-text { color: #222; }
 .navbar.dark .menu-toggle { color: #222; }
 
 .navbar.translucent {
@@ -96,7 +73,6 @@ body{
   backdrop-filter: blur(12px);
 }
 .navbar.translucent .nav-menu a { color: #fff; }
-.navbar.translucent .logo-text { color: #fff; }
 .navbar.translucent .menu-toggle { color: #fff; }
 
 /* HERO */
@@ -183,17 +159,7 @@ cursor:pointer;background:#b99963;color:#fff;font-size:18px;transition:.3s;}
     color: #1a1a1a;}
 #acceptAge{font-size:16px;}
 }
-.navbar.light .logo-text{
 
-    color:white;
-
-}
-
-.navbar.dark .logo-text{
-
-    color:#222;
-
-}
 /*==================================
         RESPONSIVE MÓVIL
 ==================================*/
@@ -219,12 +185,6 @@ cursor:pointer;background:#b99963;color:#fff;font-size:18px;transition:.3s;}
 .nav-container{
 
     padding:18px 24px;
-
-}
-
-.logo-text{
-
-    font-size:28px;
 
 }
 
