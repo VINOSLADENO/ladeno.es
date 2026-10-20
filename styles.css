@@ -41,7 +41,7 @@ body{
 
 }
 
-.logo-nav:hover img{
+.logo-nav:hover .logo-icono{
 
     transform:rotate(-8deg);
 
