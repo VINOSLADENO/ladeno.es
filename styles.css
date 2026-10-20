@@ -315,3 +315,11 @@ nav img.marca-ladeno {
   flex-shrink: 0;        /* impide que la barra lo comprima */
 }
 
+/* El SVG sigue el color de la barra, como antes la palabra */
+.navbar .marca-ladeno {
+  transition: filter .4s;
+}
+
+.navbar.dark .marca-ladeno {
+  filter: brightness(0) invert(0.13);   /* blanco → negro #222, igual que .logo-text */
+}
